@@ -1,0 +1,46 @@
+#!/bin/bash
+
+set -eu
+
+. debian/tests/testlib.sh
+
+# 1.0.x syntax
+make-ssl-cert generate-default-snakeoil --force-overwrite
+assert_changed "force overwrite 1"
+echo "check overwritten cert 1"
+do_basic_tests
+
+copy_to_tmp
+# new syntax
+make-ssl-cert --force-overwrite generate-default-snakeoil
+assert_changed "force overwrite 2"
+echo "check overwritten cert 2"
+do_basic_tests
+
+echo "check update of 1024 bit key"
+cp debian/tests/1024.pem "$CERTFILE"
+cp debian/tests/1024.key "$KEYFILE"
+copy_to_tmp
+make-ssl-cert --no-overwrite generate-default-snakeoil
+assert_unchanged "no-overwrite"
+make-ssl-cert  generate-default-snakeoil
+assert_changed "short key"
+do_basic_tests
+
+echo "check update of sha1 cert"
+cp debian/tests/sha1.pem "$CERTFILE"
+cp debian/tests/sha1.key "$KEYFILE"
+copy_to_tmp
+make-ssl-cert --no-overwrite generate-default-snakeoil
+assert_unchanged "no-overwrite 2"
+make-ssl-cert  generate-default-snakeoil
+assert_changed "sha1 cert"
+do_basic_tests
+
+echo "check no update correct cert"
+copy_to_tmp
+make-ssl-cert  generate-default-snakeoil
+assert_unchanged "correct cert overwritten"
+do_basic_tests
+
+exit $RC

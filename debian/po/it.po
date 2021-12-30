@@ -1,0 +1,126 @@
+# Italian (it) translation of debconf templates for ssl-cert
+# This file is distributed under the same license as the ssl-cert package.
+# Luca Monducci <luca.mo@tiscali.it>, 2007-2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert 1.0.29 italian debconf templates\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2012-06-10 11:11+0200\n"
+"Last-Translator: Luca Monducci <luca.mo@tiscali.it>\n"
+"Language-Team: Italian <debian-l10n-italian@lists.debian.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Nome host:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Inserire il nome host da usare nel certificato SSL."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr ""
+"Questo corrisponderà al campo \"commonName\" nel certificato SSL generato."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Nomi alternativi:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "Inserire tutti i nomi alternativi da usare nel certificato SSL."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr ""
+"Questo corrisponderà al campo \"subjectAltName\" nel certificato SSL "
+"generato."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr ""
+"In caso di due o più nomi alternativi è necessario delimitarli usando una "
+"virgola e nessun spazio. Esempio, per un server web con più nomi nel DNS "
+"potrebbe assomigliare a questo:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.example.com,DNS:images.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr ""
+"Un esempio più complesso che contiene  un nome host, un WebID, un indirizzo "
+"mail e un indirizzo IPv4:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Configurazione di un certificato SSL."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "È necessario sostituire i certificati SSL locali"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"È necessario sostituire un certificato di sicurezza creato automaticamente "
+"per il sistema locale che, a causa di un difetto, non è sicuro. Questa "
+"operazione verrà eseguita automaticamente."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr ""
+"Se non si conosce a cosa si sta facendo riferimento, è possibile ignorare "
+"questo messaggio."

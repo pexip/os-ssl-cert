@@ -1,0 +1,227 @@
+#
+#    Translators, if you are not familiar with the PO format, gettext
+#    documentation is worth reading, especially sections dedicated to
+#    this format, e.g. by running:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+#    Some information specific to po-debconf are available at
+#            /usr/share/doc/po-debconf/README-trans
+#         or http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+#    Developers do not need to manually edit POT or PO files.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2012-06-23 18:58+0200\n"
+"Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
+"Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Jméno počítače:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Zadejte prosím jméno počítače, které se má použít v SSL certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „commonName“."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Alternativní jména:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "Zadejte případná další jména, která se mají použít v SSL certifikátu."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr "V certifikátu se tato informace zapíše do pole „subjectAltName“."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr ""
+"Více alternativních jmen by mělo být odděleno jen čárkou bez mezer. Pro "
+"webový server s několika DNS jmény by to mohlo vypadat třeba takto:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.example.com,DNS:archiv.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr ""
+"Složitější příklad se jménem počítače, WebID, emailovou adresou a IPv4 "
+"adresou:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:example.com,URI:http://example.com/franta#me,email:me@example.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Nastavení SSL certifikátu."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "Místní SSL certifikáty musí být nahrazeny"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"V certifikátu, který byl automaticky vytvořen pro tento systém, byla "
+"objevena slabina, která jej činí nezabezpečeným. Certifikát musí být nahrazen "
+"novým, což se provede automaticky."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr ""
+"Pokud nevíte, o čem se tu píše, můžete tuto hlášku jednoduše ignorovat."
+
+#~ msgid "GB"
+#~ msgstr "CZ"
+
+#~ msgid "Country code:"
+#~ msgstr "Kód země:"
+
+#~ msgid ""
+#~ "Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+#~ msgstr ""
+#~ "Zadejte prosím dvoupísmenný kód země podle ISO-3166, který se má použít v "
+#~ "SSL certifikátu."
+
+#~ msgid ""
+#~ "It will become the 'countryName' field of the generated SSL certificate."
+#~ msgstr "V certifikátu se tato informace zapíše do pole „countryName“."
+
+#~ msgid "Scotland"
+#~ msgstr "Morava"
+
+#~ msgid "State or province name:"
+#~ msgstr "Jméno území nebo provincie:"
+
+#~ msgid ""
+#~ "Please enter the name of the administrative subdivision to use in the SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Zadejte prosím jméno administrativní části území, které se má použít v "
+#~ "SSL certifikátu."
+
+#~ msgid ""
+#~ "It will become the 'stateOrProvinceName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "V certifikátu se tato informace zapíše do pole „stateOrProvinceName“."
+
+#~ msgid "Edinburgh"
+#~ msgstr "Olomouc"
+
+#~ msgid "Locality name:"
+#~ msgstr "Jméno místa:"
+
+#~ msgid ""
+#~ "Please enter the name of the city or town to use in the SSL certificate."
+#~ msgstr ""
+#~ "Zadejte prosím jméno města nebo vesnice, které se má použít v SSL "
+#~ "certifikátu."
+
+#~ msgid "Example Inc."
+#~ msgstr "Příklad s r.o."
+
+#~ msgid "Organization name:"
+#~ msgstr "Jméno organizace:"
+
+#~ msgid ""
+#~ "Please enter the name of the company or organization to use in the SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Zadejte prosím jméno společnosti nebo organizace, které se má použít v "
+#~ "SSL certifikátu."
+
+#~ msgid ""
+#~ "It will become the 'organisationName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr "V certifikátu se tato informace zapíše do pole „organisationName“."
+
+#~ msgid "Dept. of Examplification"
+#~ msgstr "Oddělení vývoje a výzkumu"
+
+#~ msgid "Organizational unit name:"
+#~ msgstr "Jméno organizační jednotky:"
+
+#~ msgid ""
+#~ "Please enter the name of the division or section of the organization to "
+#~ "use in the SSL certificate."
+#~ msgstr ""
+#~ "Zadejte prosím jméno oddělení nebo části organizace, které se má použít v "
+#~ "SSL certifikátu."
+
+#~ msgid ""
+#~ "It will become the 'organisationalUnitName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "V certifikátu se tato informace zapíše do pole „organisationalUnitName“."
+
+#~ msgid "This value is mandatory."
+#~ msgstr "Tato hodnota je povinná."
+
+#~ msgid "Email address:"
+#~ msgstr "Emailová adresa:"
+
+#~ msgid "Please enter the email address to use in the SSL certificate."
+#~ msgstr ""
+#~ "Zadejte prosím emailovou adresu, která se má použít v SSL certifikátu."
+
+#~ msgid "It will become the 'email' field of the generated SSL certificate."
+#~ msgstr "V certifikátu se tato informace zapíše do pole „email“."

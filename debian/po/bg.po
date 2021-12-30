@@ -1,0 +1,223 @@
+# translation of bg.po to Bulgarian
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Damyan Ivanov <dmn@debian.org>, 2007, 2008, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2012-06-11 21:14+0300\n"
+"Last-Translator: Damyan Ivanov <dmn@debian.org>\n"
+"Language-Team: Български <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Име на хост:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Въведете името на хоста."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr ""
+"Стойността ще се използва за полето „commonName“ на генерирания сертификат."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Алтернативно име/имена:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr ""
+"Въведете евентуални допълнителни имена, които да се използват в сертификата."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr ""
+"Стойността ще се използва в полето „subjectAltName“ на генерирания "
+"сертификат."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr ""
+"Ако алтернативните имена са няколко, разделете ги със запетая, без "
+"интервали. За уеб-сървър с няколко имена в DNS стойността би изглеждала така:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.example.com,DNS:images.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr ""
+"По-сложен пример, включващ име на хост, WebID, адрес за електронна поща и, "
+"адрес по IPv4:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Настройване на сертификат за SSL."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "Локалните сертификати за SSL трябва да бъдат подменени"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"Автоматично генериран сертификат за SSL трябва да бъде подменен заради "
+"пропуск, който го прави несигурен. Замяната ще бъде направена автоматично."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr ""
+"Ако не разбирате за какво става дума, не обръщайте внимание на това "
+"съобщение."
+
+#~ msgid "GB"
+#~ msgstr "GB"
+
+#~ msgid "Country code:"
+#~ msgstr "Код на страната:"
+
+#~ msgid ""
+#~ "Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+#~ msgstr ""
+#~ "Въведете двубуквеният код на страната според ISO-3166, който да се "
+#~ "използва в сертификата за SSL."
+
+#~ msgid ""
+#~ "It will become the 'countryName' field of the generated SSL certificate."
+#~ msgstr ""
+#~ "Стойността ще се използва за полето „countryName“ в генерирания "
+#~ "сертификат."
+
+#~ msgid "Scotland"
+#~ msgstr "Scotland"
+
+#~ msgid "State or province name:"
+#~ msgstr "Име на щат или провинция:"
+
+#~ msgid ""
+#~ "Please enter the name of the administrative subdivision to use in the SSL "
+#~ "certificate."
+#~ msgstr "Въведете името на административното подразделение."
+
+#~ msgid ""
+#~ "It will become the 'stateOrProvinceName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Стойността ще се използва в полето „stateOrProvinceName“ на генерираният "
+#~ "сертификат."
+
+#~ msgid "Edinburgh"
+#~ msgstr "Edinburgh"
+
+#~ msgid "Locality name:"
+#~ msgstr "Населено място:"
+
+#~ msgid ""
+#~ "Please enter the name of the city or town to use in the SSL certificate."
+#~ msgstr "Въведете името на населеното място."
+
+#~ msgid "Example Inc."
+#~ msgstr "Example Inc."
+
+#~ msgid "Organization name:"
+#~ msgstr "Организация:"
+
+#~ msgid ""
+#~ "Please enter the name of the company or organization to use in the SSL "
+#~ "certificate."
+#~ msgstr "Въведете името на организацията."
+
+#~ msgid ""
+#~ "It will become the 'organisationName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Стойността ще се използва за полето „organisationName“ на генерирания "
+#~ "сертификат."
+
+#~ msgid "Dept. of Examplification"
+#~ msgstr "Dept. of Examplification"
+
+#~ msgid "Organizational unit name:"
+#~ msgstr "Подразделение:"
+
+#~ msgid ""
+#~ "Please enter the name of the division or section of the organization to "
+#~ "use in the SSL certificate."
+#~ msgstr "Въведете името на организационното подразделение."
+
+#~ msgid ""
+#~ "It will become the 'organisationalUnitName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Стойността ще се използва за полето „organisationalUnitName“ на "
+#~ "генерирания сертификат."
+
+#~ msgid "This value is mandatory."
+#~ msgstr "Това поле е задължително."
+
+#~ msgid "Email address:"
+#~ msgstr "Email адрес:"
+
+#~ msgid "Please enter the email address to use in the SSL certificate."
+#~ msgstr "Въведете Email адрес."
+
+#~ msgid "It will become the 'email' field of the generated SSL certificate."
+#~ msgstr ""
+#~ "Стойността ще се използва за полето „email“ на генерирания сертификат."

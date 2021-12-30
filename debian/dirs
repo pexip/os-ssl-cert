@@ -1,0 +1,5 @@
+usr/sbin
+usr/share/lintian/overrides
+usr/share/ssl-cert
+etc/ssl/private
+etc/ssl/certs

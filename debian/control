@@ -1,0 +1,20 @@
+Source: ssl-cert
+Section: utils
+Priority: optional
+Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Uploaders: Stefan Fritsch <sf@debian.org>
+Build-Depends: debhelper-compat (= 12), po-debconf
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/apache-team/ssl-cert
+Vcs-Git: https://salsa.debian.org/apache-team/ssl-cert.git
+
+Package: ssl-cert
+Architecture: all
+Depends: ${misc:Depends}, openssl (>= 0.9.8g-9), adduser
+Multi-Arch: foreign
+Description: simple debconf wrapper for OpenSSL
+ This package enables unattended installs of packages that
+ need to create SSL certificates.
+ .
+ It is a simple wrapper for OpenSSL's certificate request utility that
+ feeds it with the correct user variables.

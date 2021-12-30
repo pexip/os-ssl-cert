@@ -1,0 +1,127 @@
+# Translation of ssl-cert debconf template to Swedish
+# Copyright (C) 2012 Martin Bagge <brother@bsnet.se>
+# This file is distributed under the same license as the ssl-cert package.
+#
+# Martin Bagge <brother@bsnet.se>, 2008, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert_1.0.20_sv\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2012-06-10 18:35+0100\n"
+"Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
+"Language-Team: Swedish <debian-l10n-swedish@lists.debian.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: Sweden\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Värdnamn:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Ange värdnamnet som ska användas i SSL-certifikatet."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr ""
+"Det kommer att placeras i \"commonName\"-fältet i det genererade SSL-"
+"certifikatet."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Alternativa namn:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "Ange ytterligare namn som ska användas i SSL-certifikatet."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr ""
+"De kommer att placeras i \"subjectAltName\"-fältet i det genererade SSL-"
+"certifikatet."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr ""
+"Alternativa namn separeras med kommatecken, inga mellanslag. För en "
+"webbserver med flera DNS-namn kan detta se ut så här:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.example.com,DNS:images.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr ""
+"Ett mer komplicerat exempel med ett värdnamn, ett WebID, en e-post-adress "
+"och en IPv4-adress:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Konfigurera ett SSL-certifikat."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "Lokala SSL-certifikat måste ersättas"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"Ett certifikat som tagits fram för ditt lokala system måste bytas ut då det "
+"är osäkert. Detta kommer att göras automatiskt."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr "Om du inte vet något om det här så kan du ignorera detta meddelande."

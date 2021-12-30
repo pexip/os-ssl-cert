@@ -1,0 +1,479 @@
+ssl-cert (1.1.2) unstable; urgency=medium
+
+  [ Simon Chopin ]
+  * Fix the key size regex to be compatible with OpenSSL 3 changes in
+    output format
+
+  [ Stefan Fritsch ]
+  * Add another autopkgtest.
+
+ -- Stefan Fritsch <sf@debian.org>  Thu, 30 Dec 2021 17:52:53 +0100
+
+ssl-cert (1.1.1) unstable; urgency=medium
+
+  * Remove RANDFILE from the config template. It's no longer necessary and
+    breaks with openssl 3.0. Closes: #990228
+  * Incorporate NMU. Thanks to Timo Röhling.
+  * Update standards version. No changes needed.
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 07 Nov 2021 17:33:48 +0100
+
+ssl-cert (1.1.0+nmu1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Use correct argument for output file (Closes: #988310)
+
+ -- Timo Röhling <roehling@debian.org>  Sun, 06 Jun 2021 23:02:49 +0200
+
+ssl-cert (1.1.0) unstable; urgency=medium
+
+  [ Stefan Fritsch ]
+  * Remove obsolete openssl-blacklist suggests.
+  * Add some autopkgtests. LP: #1679405
+  * Create correct hash symlink. LP: #1324897
+  * Automatically re-create the default snakeoil certificate if its key
+    length is below 2048 bits or if the signature algorithm is not sha256.
+    Closes: #924881
+
+  [ Bryce Harrington ]
+  * Refactor make-ssl-cert a bit, add usage message.
+  * Add --expiration-days option. LP: #1853021
+
+ -- Stefan Fritsch <sf@debian.org>  Mon, 28 Dec 2020 15:20:52 +0100
+
+ssl-cert (1.0.40) unstable; urgency=medium
+
+  [ Stefan Fritsch ]
+  * Migrate from alioth to salsa
+  * Update standards version. No changes needed.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Use set -e rather than passing -e on the shebang-line.
+  * Bump debhelper from deprecated 7 to 12.
+  * Set debhelper-compat version in Build-Depends.
+
+ -- Stefan Fritsch <sf@debian.org>  Sat, 21 Nov 2020 22:33:52 +0100
+
+ssl-cert (1.0.39) unstable; urgency=medium
+
+  * Always put the common name also in the SubjectAltName. This is required
+    to make newer web browsers happy. Closes: #861185
+    The wording in the debconf questions will be adjusted later, to avoid
+    having to fix so many translation shortly before the release.
+
+ -- Stefan Fritsch <sf@debian.org>  Fri, 28 Apr 2017 21:58:22 +0200
+
+ssl-cert (1.0.38) unstable; urgency=medium
+
+  * Update Turkish translation. Thanks to Atila KOÇ. Closes: #807559
+  * Update standards version. No changes needed.
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 29 May 2016 13:41:52 +0200
+
+ssl-cert (1.0.37) unstable; urgency=medium
+
+  [ Jean-Michel Nirgal Vourgère ]
+  * Migrated d/copyright to DEP5 format. This fixes a Lintian warning.
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 16 Aug 2015 11:33:58 +0200
+
+ssl-cert (1.0.36) unstable; urgency=medium
+
+  * Set umask to make sure that the generated key is not world-readable
+    for a short timespan while make-ssl-cert runs. Closes: #780828
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 29 Mar 2015 22:33:57 +0200
+
+ssl-cert (1.0.35) unstable; urgency=medium
+
+  * Update Vcs-Git URL in control file.
+  * Update standards version. No changes needed.
+
+ -- Stefan Fritsch <sf@debian.org>  Sat, 04 Oct 2014 14:24:55 +0200
+
+ssl-cert (1.0.34) unstable; urgency=medium
+
+  * Switch to SHA2 for newly generated certificates. Closes: #733255
+  * Bump Standards-Version (no changes).
+
+ -- Stefan Fritsch <sf@debian.org>  Thu, 29 May 2014 16:44:30 +0200
+
+ssl-cert (1.0.33) unstable; urgency=low
+
+  * Update Japanese translation, thanks to victory <victory deb gmail com>
+    Closes: 712914
+  * Mark as Multi-Arch: foreign. Closes: #698787
+  * Bump Standards-Version (no changes).
+  * Run debconf-updatepo on translations
+
+ -- Stefan Fritsch <sf@debian.org>  Fri, 02 Aug 2013 23:02:16 +0200
+
+ssl-cert (1.0.32) unstable; urgency=low
+
+  * Update Brazilian Portuguese, thanks to J. S. Júnior. Closes: #685887
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 26 Aug 2012 19:45:06 +0200
+
+ssl-cert (1.0.31) unstable; urgency=low
+
+  * Update Czech translation, thanks to Miroslav Kure. Closes: #678673
+
+ -- Stefan Fritsch <sf@debian.org>  Sat, 23 Jun 2012 21:03:57 +0200
+
+ssl-cert (1.0.30) unstable; urgency=low
+
+  * Add new translations:
+    - Polish, thanks to Michał Kułach. Closes: #676836
+    - Simplified Chinese, thanks to YunQiang Su. Closes: #676861
+  * Update translations:
+    - Italian, thanks to Luca Monducci. Closes: #676879
+    - Danish, thanks to Joe Dalton. Closes: #676892
+    - Swedish, thanks to Martin Bagge. Closes: #676938
+    - Slovak, thanks to Ivan Masár. Closes: #676974
+    - Russian, thanks to Yuri Kozlov. Closes: #677009
+    - Spanish, thanks to Javier Fernández-Sanguino. Closes: #677099
+    - French, thanks to Christian Perrier. Closes: #676934
+    - Bulgarian, thanks to Damyan Ivanov. Closes: #677112
+    - Dutch, thanks to Jeroen Schot. Closes: #677356
+    - German, thanks to Florian Rehnisch. Closes: #677695
+    - Portuguese, thanks to Miguel Figueiredo. Closes: #677734
+    - Catalan, thanks to Innocent De Marchi. Closes: #677905
+
+ -- Stefan Fritsch <sf@debian.org>  Fri, 22 Jun 2012 23:49:57 +0200
+
+ssl-cert (1.0.29) unstable; urgency=low
+
+  * Add support for subject alternative names. Thanks to Jonas Smedegaard for
+    the patch. Closes: #645515
+    (Sorry to all translators for adding a template so close to the freeze.)
+  * For "make-ssl-cert generate-default-snakeoil", if the FQDN is too long,
+    put it in the SubjAltName and use the simple hostname as CN.
+    Closes: #674598
+  * Add Catalan translation. Thanks to Innocent De Marchi. Closes: #628373
+  * Bump Standards-Version (no changes).
+  * Switch VCS to git
+  * Fix lintian warnings about build-arch/build-indep targets in debian/rules.
+
+ -- Stefan Fritsch <sf@debian.org>  Sat, 09 Jun 2012 20:33:07 +0200
+
+ssl-cert (1.0.28) unstable; urgency=low
+
+  * Add Danish translation, thanks to Joe Hansen. Closes: #606736
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 12 Dec 2010 14:35:29 +0100
+
+ssl-cert (1.0.27) unstable; urgency=low
+
+  * Make default key length 2048 bits. Closes: #598732
+
+ -- Stefan Fritsch <sf@debian.org>  Sat, 02 Oct 2010 14:46:52 +0200
+
+ssl-cert (1.0.26) unstable; urgency=low
+
+  * Update Brazilian translation. Thanks to Flamarion Jorge. Closes: #592157
+  * Run debconf-updatepo.
+  * Switch to source format 3.0.
+  * Bump Standards-Version (no changes).
+  * Remove Adam Conrad from Uploaders. Thanks for your work in the past.
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 08 Aug 2010 23:15:53 +0200
+
+ssl-cert (1.0.25) unstable; urgency=low
+
+  * Fix purging in case the snakeoil ssl key has been removed manually.
+    Closes: #555042
+  * Remove directories and hash symlink on purge.
+  * Use dpkg-statoverride for changing the group of /etc/ssl/private.
+  * Downgrade dependency on openssl-blacklist to a suggests. All vulnerable
+    keys should be upgraded by now.
+
+ -- Stefan Fritsch <sf@debian.org>  Wed, 11 Nov 2009 22:01:21 +0100
+
+ssl-cert (1.0.24) unstable; urgency=low
+
+  * Print error message if debconf fails. Closes: #288045
+  * Print error message if openssl fails. LP: #132714
+  * Create group even if user tweaked NAME_REGEX. Closes: #540016
+  * Update Slovak translation, thanks to helix84@centrum.sk. Closes: #514376
+  * Fix typo. Closes: #536083 LP: #352157
+  * Fix lintian warnings:
+    - Update copyright file
+    - Update to debhelper 7
+    - Override postinst-uses-db-input warning
+  * Remove empty directories on purge.
+  * Bump standards-version (no changes)
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 01 Nov 2009 12:14:55 +0100
+
+ssl-cert (1.0.23) unstable; urgency=low
+
+  * Update Dutch translation, thanks to Paul Gevers. Closes: #499978
+
+ -- Stefan Fritsch <sf@debian.org>  Wed, 24 Sep 2008 16:49:49 +0200
+
+ssl-cert (1.0.22) unstable; urgency=low
+
+  [ Ryan Niebur ]
+  * Upgraded to policy version 3.8.0 (no changes)
+
+  [ Stefan Fritsch ]
+  * Update translations:
+    - Japanese. Closes: #489294
+    - Basque. Closes: #489863
+
+ -- Stefan Fritsch <sf@debian.org>  Sat, 19 Jul 2008 20:58:12 +0200
+
+ssl-cert (1.0.21) unstable; urgency=low
+
+  [ Stefan Fritsch ]
+  * Template and translations update. Thanks to Christian Perrier and the
+    other translators.
+
+  [ Christian Perrier ]
+  * Fix trailing space in templates. Closes: #486078
+  * Debconf translations:
+    - French. Closes: #486079
+    - Japanese translation renamed from jp.po to ja.po
+    - Galician. Closes: #486152
+    - Vietnamese. Closes: #486183
+    - Swedish. Closes: #486199
+    - Czech. Closes: #486233
+    - Spanish. Closes: #486412
+    - Bulgarian. Closes: #486450
+    - Turkish. Closes: #486495
+    - Finnish. Closes: #486550
+    - Russian. Closes: #487243
+    - Portuguese. Closes: #487294
+    - Italian. Closes: #487363
+    - German. Closes: #487442
+
+ -- Stefan Fritsch <sf@debian.org>  Mon, 23 Jun 2008 21:24:15 +0200
+
+ssl-cert (1.0.20) unstable; urgency=medium
+
+   * Security: replace known vulnerable weak keys and certificates
+     caused by Debian openssl bug (CVE-2008-0166). Thanks to Mathias Gug for
+     the patch.
+     - Depend on openssl (0.9.8g-9), openssl-blacklist.
+     - add critical debconf note.
+     - debian/postinst: regenerate snakeoil key and certificate on upgrade if
+       vulnerable.
+   * Remove auto-generated snakeoil certificates when package is purged.
+   * Update translations:
+     - Slovak (thanks to Ivan Masár, closes: #483518)
+     - Basque (thanks to Piarres Beobide, closes: #483241)
+
+ -- Stefan Fritsch <sf@debian.org>  Wed, 11 Jun 2008 21:22:05 +0200
+
+ssl-cert (1.0.19) unstable; urgency=low
+
+  * Improve man page, thanks to Olivier Berger (closes: #481451).
+  * Update translations:
+    - Italian (thanks to Luca Monducci, closes: #479359)
+    - Galician (thanks to Jacobo Tarrio, closes: #480969)
+
+ -- Stefan Fritsch <sf@debian.org>  Sun, 18 May 2008 19:28:11 +0200
+
+ssl-cert (1.0.18) unstable; urgency=low
+
+  * Update translations:
+    - Spanish (thanks to Javier Fernández-Sanguino Peña, closes: #473408)
+    - German (thanks to Erik Schanze, closes: #473307)
+
+ -- Stefan Fritsch <sf@debian.org>  Thu, 03 Apr 2008 22:45:22 +0200
+
+ssl-cert (1.0.17) unstable; urgency=low
+
+  * If DNS does not work, use unqualified hostname for snakeoil cert instead
+    of exiting with an error (Closes: #469073).
+  * Update translations:
+    - French (thanks to Christian Perrier, closes: #467129)
+    - Finnish (thanks to Esko Arajärvi, closes: #468545)
+  * Add myself to uploaders. Remove Fabio M. Di Nitto and Thom May. Thanks for
+    your past work.
+  * Add VCS tags to debian/control.
+  * Bump standards version (no changes).
+
+ -- Stefan Fritsch <sf@debian.org>  Sat, 22 Mar 2008 23:14:58 +0100
+
+ssl-cert (1.0.16) unstable; urgency=low
+
+  * Get rid of RANDFILE and just use /dev/urandom instead.  Closes: #465279
+  * Update Swedish translation.  Closes: #446258
+  * Update Brazilian translation.  Closes: #448511
+  * Add Japanese translation.  Closes: #465679
+
+ -- Tollef Fog Heen <tfheen@debian.org>  Wed, 20 Feb 2008 13:27:11 +0100
+
+ssl-cert (1.0.15) unstable; urgency=low
+
+  * Use 'hostname -f' for the snakeoil CN instead of 'hostname', since
+    relative hostnames are subject to namespace collisions that could be
+    exploited (and also because OpenLDAP doesn't care for them when
+    connecting to localhost).  Thanks to Steve Langasek for the patch.
+    Closes: 464930
+  * Debconf templates and debian/control reviewed by the debian-l10n-
+    english team as part of the Smith review project. Closes: #445589
+  * [Debconf translation updates]
+  * Bulgarian. Closes: #446210
+  * Galician. Closes: #446488
+  * Spanish; Castilian. Closes: #446311
+  * Finnish. Closes: #446640
+  * Czech. Closes: #446670
+  * Portuguese. Closes: #446679
+  * Finnish. Closes: #446640
+  * Turkish. Closes: #446878
+  * Vietnamese. Closes: #446900
+  * Basque. Closes: #447138
+  * Italian. Closes: #447441
+  * Russian. Closes: #447900
+  * Slovak. Closes: #447909
+  * German. Closes: #447921
+  * French. Closes: #448226
+  * Do getent group rather than getent passwd in postinst.  Closes: 444902
+  * Make the default SSL cert have a lifetime of 10 years rather than 30
+    days.  Closes: 293821
+  * Add set -e to postinst and postrm.  Closes: 384591
+  * Make default openssl config pull RANDFILE from the environment.
+    Closes: 384595.
+  * Only ask for hostname, drop questions about country, organisation and
+    such.  Closes: 230391, 287692.
+  * Handle relative output file paths correctly by using basename when
+    symlinking to the hash file.  Closes: 292157.
+  * Fix lintian warnings (clean-should-be-satisfied-by-build-depends
+    debhelper and newer-debconf-templates).
+  * Add buid-dependency on po-debconf.
+
+ -- Tollef Fog Heen <tfheen@debian.org>  Sun, 10 Feb 2008 20:22:54 +0100
+
+ssl-cert (1.0.14) unstable; urgency=low
+
+  * Updated debconf translations:
+    - tr, thanks to Mehmet Türker (Closes: #417551)
+
+ -- Peter Samuelson <peter@p12n.org>  Tue,  3 Apr 2007 13:58:19 -0500
+
+ssl-cert (1.0.13) unstable; urgency=low
+
+  * Depend on adduser, since we use addgroup in postinst (closes: #367817)
+
+ -- Adam Conrad <adconrad@0c3.net>  Thu, 18 May 2006 21:59:18 +1000
+
+ssl-cert (1.0.12) unstable; urgency=low
+
+  * Merge updated debconf translations from the bug tracking system:
+    - ja.po, thanks to Hideki Yamane <henrich@samba.gr.jp>
+    - sv.po, thanks to Daniel Nylander <yeager@lidkoping.net>
+    - fr.po, thanks to Nicolas Bertolissio <nico.bertol@free.fr>
+    - vi.po, thanks to Clytie Siddall <clytie@riverland.net.au>
+    - cs.po, thanks to Miroslav Kure <kurem@upcase.inf.upol.cz>
+    - nl.po, thanks to Vincent Zweije <zweije@xs4all.nl>
+    - de.po, thanks to Erik Schanze <schanzi_usenet@gmx.de>
+  * Closes: #346292, #365346, #313260, #319722, #324563, #330586, #259984
+
+ -- Adam Conrad <adconrad@0c3.net>  Tue,  2 May 2006 07:26:29 +1000
+
+ssl-cert (1.0.11.0ubuntu1) dapper; urgency=low
+
+  * This package is debian-native, adjust version number to reflect this.
+  * Create "ssl-cert" group, and make our snakeoil key readable by this
+    group, so that daemons that don't start as root (like postgres) can
+    still manage to read the private key, if they're also in said group.
+  * Undo the above permissions on /etc/ssl/private on package removal.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 22 Feb 2006 19:53:46 +1100
+
+ssl-cert (1.0-11ubuntu1) dapper; urgency=low
+
+  * Cleanup the code a lot to be a bit more readable.
+  * Add option generate-default-snakeoil.
+  * Create default snakeoil in postinst.
+
+ -- Fabio M. Di Nitto <fabbione@ubuntu.com>  Fri, 03 Feb 2006 13:36:53 +0100
+
+ssl-cert (1.0-11) unstable; urgency=low
+
+  * Depend on openssl (Closes: #288050)
+  * Update english string to correct grammar (Closes: #253810)
+  * Translation updates:
+    - German (Closes: #264655)
+    - Brazilian (Closes: #267188)
+    - Czech (Closes: #287307)
+
+ -- Thom May <thom@debian.org>  Fri,  7 Jan 2005 16:03:23 +0000
+
+ssl-cert (1.0-10) unstable; urgency=high
+
+  * Stop using an unsafe tmpfile. Reported by Marco d'Itri.
+
+ -- Thom May <thom@debian.org>  Fri,  3 Sep 2004 14:52:29 +0100
+
+ssl-cert (1.0-9) unstable; urgency=low
+
+  * Update Japanese translation by Hideki Yamane.
+    (Closes: #259984)
+
+ -- Fabio M. Di Nitto <fabbione@fabbione.net>  Sun, 18 Jul 2004 07:56:58 +0200
+
+ssl-cert (1.0-8) unstable; urgency=low
+
+  * Set a title for Debconf questions.
+  * Add Japanese translation by Hideki Yamane. (Closes: #244636)
+  * Add Turkish translation by Recai Oktas. (Closes: #246071)
+  * All questions must be answered.
+    (Closes: #229505, #241857, #249365, #251223)
+
+ -- Thom May <thom@debian.org>  Tue, 29 Jun 2004 16:39:02 +0100
+
+ssl-cert (1.0-7) unstable; urgency=low
+
+  * Fixed sed error using "#" instead of a comma as field separator
+    (Closes: 225487)
+
+ -- Fabio M. Di Nitto <fabbione@fabbione.net>  Thu, 15 Jan 2004 10:05:22 +0100
+
+ssl-cert (1.0-6) unstable; urgency=low
+
+  * Added support for hash symlink to certificate
+
+ -- Fabio M. Di Nitto <fabbione@fabbione.net>  Sat, 06 Dec 2003 12:19:50 +0100
+
+ssl-cert (1.0-5) unstable; urgency=low
+
+  * Fixed make-ssl-cert to remove temporary files
+
+ -- Fabio M. Di Nitto <fabbione@fabbione.net>  Mon, 20 Oct 2003 10:01:05 +0200
+
+ssl-cert (1.0-4) unstable; urgency=low
+
+  * Added fr translation, thanks to the french team (Closes: #211275)
+  * Added pt_BR translation, thanks to the brazillian team (Closes: #210830)
+
+ -- Fabio M. Di Nitto <fabbione@fabbione.net>  Wed, 24 Sep 2003 06:34:24 +0200
+
+ssl-cert (1.0-3) unstable; urgency=low
+
+  * Fixed templates to avoid unnecessary translation fields (Closes: #208924)
+
+ -- Thom May <thom@debian.org>  Mon, 08 Sep 2003 11:37:01 +0100
+
+ssl-cert (1.0-2) unstable; urgency=low
+
+  * Changed Section: to utils, to match openssl
+  * Fixed templates to provide a sane defaut for
+    non-interactive installation
+
+ -- Thom May <thom@debian.org>  Wed,  3 Sep 2003 12:29:14 +0100
+
+ssl-cert (1.0-1) unstable; urgency=low
+
+  * (Thom May)
+    - everything
+    - Add lintian overrides for the debconf warnings. We're not using debconf
+      as a registry!
+  * (Fabio M. Di Nitto)
+    - debianization
+
+ -- Thom May <thom@debian.org>  Tue, 02 Sep 2003 12:23:00 +0200

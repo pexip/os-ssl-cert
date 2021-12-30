@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -eu
+
+. debian/tests/testlib.sh
+
+echo "check installed cert"
+do_basic_tests
+copy_to_tmp
+assert_unchanged "check infra"
+
+make-ssl-cert generate-default-snakeoil
+assert_unchanged "no overwrite"
+
+exit $RC

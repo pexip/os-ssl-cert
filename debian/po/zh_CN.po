@@ -1,0 +1,122 @@
+# Chinese translations for ssl-cert package
+# ssl-cert 软件包的简体中文翻译.
+# Copyright (C) 2012 THE ssl-cert'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ssl-cert package.
+# 苏运强 <syq@syq-laptop>, 2012.
+# YunQiang Su <wzssyqa@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2012-06-10 11:47+0800\n"
+"Last-Translator: YunQiang Su <wzssyqa@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bits\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "主机名："
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "请输入要在 SSL 证书中使用的主机名。"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr "这将是生成的 SSL 证书的 'commonName' 字段。"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "候补名称："
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "请输入要在 SSL 证书中使用的任何附加名称。"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr "它将成为生成的 SSL 证书的 'subjectAltName' 字段。"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr ""
+"多个候补名称应该使用逗号分隔，没有空格。对于有多个域名的网页服务器，看起来类"
+"似："
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.example.com,DNS:images.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr ""
+"更复杂的例子包括一个主机名，一个 WebID，一个电子邮件地址以及一个 IPv4 地址："
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "配置一个 SSL 证书。"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "必须替换本地 SSL 证书"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"为本地系统自动生成的安全证书需要被替换，因为一个缺陷使其变得不安全。这将自动"
+"完成。"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr "如果您不了解这些内容，可以安全地忽略此信息。"

@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+install:
+	dh_testdir
+	dh_testroot
+	dh_clean
+	dh_installdirs
+	dh_installdocs README
+	dh_installman make-ssl-cert.8
+	dh_installchangelogs
+	dh_lintian
+	install -m 755 make-ssl-cert debian/ssl-cert/usr/sbin
+	install -m 644 ssleay.cnf debian/ssl-cert/usr/share/ssl-cert
+
+build-arch:
+build-indep:
+build:
+	# do nothing
+
+binary-indep: install
+	dh_testdir
+	dh_testroot
+	dh_compress
+	dh_fixperms
+	chmod 700 debian/ssl-cert/etc/ssl/private
+	dh_installdebconf
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary-arch:
+	# do nothing
+
+binary: binary-indep binary-arch
+
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+	debconf-updatepo

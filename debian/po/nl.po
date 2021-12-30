@@ -1,0 +1,128 @@
+# Dutch translation of ssl-cert debconf templates.
+# Copyright (C) 2008, 2012 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ssl-cert package.
+# Paul Gevers <paul@climbing.nl>, 2008.
+# Jeroen Schot <schot@a-eskwadraat.nl>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert 1.0.29\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2012-06-13 13:01+0200\n"
+"Last-Translator: Jeroen Schot <schot@a-eskwadraat.nl>\n"
+"Language-Team: Debian l10n Dutch <debian-l10n-dutch@lists.debian.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Computernaam:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Welke computernaam wilt u gebruiken voor het SSL-certificaat?"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr ""
+"De naam zal in het 'commonName'-veld komen van het gegenereerde SSL-"
+"certificaat."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Alternatieve naam (of namen):"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "Welke extra namen wilt u gebruiken voor het SSL-certificaat?"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr ""
+"De naam zal in het 'subjectAltName'-veld komen van het gegenereerde SSL-"
+"certificaat."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr ""
+"Meerdere alternatieve namen moeten worden gescheiden door enkel een komma en "
+"geen spaties. Voor een webserver met meerdere DNS-namen zou dit er zou uit "
+"kunnen zien:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.example.com,DNS:images.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr ""
+"Een ingewikkelder voorbeeld bevat een computernaam, een WebID, een e-"
+"mailadres en een IPv4-adres:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:example.com,URI:http://example.com/jan#ik,email:ik@example.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Een SSL-certificaat configureren."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "Lokale SSL-certificaten moeten worden vervangen."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"Een automatisch aangemaakt veiligheidscertificaat voor uw lokale systeem "
+"moet worden vervangen vanwege een fout die het onveilig maakt. Dit gebeurt "
+"automatisch."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr ""
+"U kunt dit bericht veilig negeren, als u niet weet waar het hier over gaat."

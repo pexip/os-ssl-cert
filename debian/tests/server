@@ -1,0 +1,34 @@
+#!/bin/bash
+
+set -eu
+
+. debian/tests/testlib.sh
+
+SERVERLOG="$AUTOPKGTEST_TMP/server.log"
+CURLLOG="$AUTOPKGTEST_TMP/curl.log"
+
+test_s_server() {
+	local error=false
+	openssl s_server -www -port 4433 -key "$KEYFILE" -cert "$CERTFILE" > "$SERVERLOG" 2>&1 &
+	SERVERPID=$!
+
+	local to=5
+	while [ "$to" -ge 0 ] && ! grep -q ACCEPT "$SERVERLOG" 2> /dev/null ; do
+		sleep 1
+		to=$(( to - 1 ))
+	done
+
+	curl --no-progress-meter -k https://127.0.0.1:4433/ > "$CURLLOG" 2>&1 || error=true
+	kill "$SERVERPID" || true
+	if "$error" ; then
+		err "curl request failed"
+		echo "=== s_sever log ==="
+		cat "$SERVERLOG"
+		echo "=== curl log ==="
+		cat "$CURLLOG"
+	fi
+}
+
+test_s_server
+
+exit $RC

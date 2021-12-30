@@ -1,0 +1,255 @@
+# Turkish translation of ssl-cert.
+# This file is distributed under the same license as the ssl-cert package.
+# Mehmet Türker <mturker@innova.com.tr>, 2004.
+# Atila KOÇ <koc@artielektronik.com.tr>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2015-12-04 17:57+0200\n"
+"Last-Translator: Atila KOÇ <koc@artielektronik.com.tr>\n"
+"Language-Team: Turkish <debian-l10n-turkish@lists.debian.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Makine adı:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "SSL sertifikasında kullanılacak makine adını girin"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr "Üretilecek SSL sertifikasında 'commonName' alanını oluşturacaktır."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Alternatif ad(lar):"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "SSL sertifikasında kullanılacak diğer adları girin"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr "Üretilecek SSL sertifikasında 'subjectAltName' alanını oluşturacaktır."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr ""
+"Çoklu alternatif adlar boşluk verilmeden, virgül kullanılarak "
+"sınırlandırılmalıdır. Birden fazla DNS alan adına sahip bir web sunucusu "
+"için bu, aşağıdaki şekilde görülür:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.example.com,DNS:resimler.example.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr ""
+"Makine adı, bir WebID, bir e-posta adresi ve bir IPv4 adresi içeren daha "
+"karmaşık bir örnek:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Bir SSL sertifikası yapılandır"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "Yerel SSL sertifikaları değiştirilmeli"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"Yerel sisteminiz için kendiliğinden yaratılmış bir güvenlik sertifikasının, "
+"bu sertifikayı güvensiz kılan bir kusur nedeniyle değiştirilmesi gerekiyor. "
+"Bu işlem kendiliğinden gerçekleştirilecektir."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr ""
+"Bunun hakkında herhangi bir şey bilmiyorsanız, bu iletiyi gözardı "
+"edebilirsiniz."
+
+#~ msgid "GB"
+#~ msgstr "TR"
+
+#~ msgid "Country code:"
+#~ msgstr "Ülke kodu:"
+
+#~ msgid ""
+#~ "Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+#~ msgstr ""
+#~ "SSL sertifikasında kullanılmak üzere iki harfli ISO-3166 kodunu girin "
+#~ "(Türkiye için 'TR')."
+
+#~ msgid ""
+#~ "It will become the 'countryName' field of the generated SSL certificate."
+#~ msgstr ""
+#~ "Üretilen SSL sertifikasında 'ülke adı' alanında kullanılacak "
+#~ "(countryName)."
+
+#~ msgid "Scotland"
+#~ msgstr "Ankara"
+
+#~ msgid "State or province name:"
+#~ msgstr "Eyalet ya da Vilayet İsmi:"
+
+#~ msgid ""
+#~ "Please enter the name of the administrative subdivision to use in the SSL "
+#~ "certificate."
+#~ msgstr "SSL sertifikasında kullanılmak üzere yönetim altbirim ismi girin."
+
+#~ msgid ""
+#~ "It will become the 'stateOrProvinceName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Üretilen SSL sertifikasında 'eyalet ya da vilayet ismi' alanında "
+#~ "kullanılacak (stateOrProvinceName)."
+
+#~ msgid "Edinburgh"
+#~ msgstr "Ankara"
+
+#~ msgid "Locality name:"
+#~ msgstr "Mevki İsmi:"
+
+#~ msgid ""
+#~ "Please enter the name of the city or town to use in the SSL certificate."
+#~ msgstr "SSL sertifikasında kullanılmak üzere şehir yada kasaba ismi girin."
+
+#~ msgid "Example Inc."
+#~ msgstr "Örnek Anonim."
+
+#~ msgid "Organization name:"
+#~ msgstr "Organizasyon İsmi:"
+
+#~ msgid ""
+#~ "Please enter the name of the company or organization to use in the SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "SSL sertifikasında kullanılmak üzere şirket yada organizasyon ismi girin."
+
+#~ msgid ""
+#~ "It will become the 'organisationName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Üretilen SSL sertifikasında 'organizasyon ismi' alanında kullanılacak "
+#~ "(organisationName)."
+
+#~ msgid "Dept. of Examplification"
+#~ msgstr "Örnek Daire"
+
+#~ msgid "Organizational unit name:"
+#~ msgstr "Organizasyon Birim Adı:"
+
+#~ msgid ""
+#~ "Please enter the name of the division or section of the organization to "
+#~ "use in the SSL certificate."
+#~ msgstr ""
+#~ "SSL sertifikasında kullanılmak üzere organizasyon içindeki bölüm yada "
+#~ "grup ismini girin."
+
+#~ msgid ""
+#~ "It will become the 'organisationalUnitName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Üretilen SSL sertifikasında 'organizasyon birim adı' alanında "
+#~ "kullanılacak (organisationalUnitName)."
+
+#~ msgid "This value is mandatory."
+#~ msgstr "Bu değer zorunlu."
+
+#~ msgid "Email address:"
+#~ msgstr "E-posta Adresi:"
+
+#~ msgid "Please enter the email address to use in the SSL certificate."
+#~ msgstr "SSL sertifikasında kullanılmak üzere bir e-posta adresi girin."
+
+#~ msgid "It will become the 'email' field of the generated SSL certificate."
+#~ msgstr "Üretilen SSL sertifikasında 'ePosta' alanında kullanılacak(email)."
+
+#~ msgid "The two letter code for your Country. (e.g. GB) (countryName)"
+#~ msgstr "Ülkenizin iki harfli kodu. (ör. TR) (countryName)"
+
+#~ msgid "Some-State"
+#~ msgstr "Bir Eyalet"
+
+#~ msgid "Your state, county or province. (stateOrProvinceName)"
+#~ msgstr "Eyalet, ilçe ya da vilayet. (stateOrProvinceName)"
+
+#~ msgid "Some-Locality"
+#~ msgstr "Bir Mevki"
+
+#~ msgid "One Organization"
+#~ msgstr "Bir Organizasyon"
+
+#~ msgid "One Organization Unit"
+#~ msgstr "Bir Organizasyon Birimi"
+
+#~ msgid ""
+#~ "The Division or section of the organisation the certificate is for. "
+#~ "(organisationalUnitName)"
+#~ msgstr ""
+#~ "Sertifika için organizasyonun bölüm ya da birim adı. "
+#~ "(organisationalUnitName)"
+
+#~ msgid ""
+#~ "The host name of the server the certificate is for. This must be filled "
+#~ "in. (commonName)"
+#~ msgstr ""
+#~ "Sertifika için sunucunun makine ismi. Bu alan doldurulması zorunludur. "
+#~ "(commonName)"

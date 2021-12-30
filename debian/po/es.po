@@ -1,0 +1,278 @@
+#
+# ssl-cert po-debconf translation to spanish
+# Copyright (C) 2006 Software in the Public Interest, SPI Inc.
+# This file is distributed under the same license as the ssl-cert package.
+#
+# Changes:
+# - Initial translation
+#       Javier Fernández-Sanguino , 2006
+#
+#
+#  Traductores, si no conoce el formato PO, merece la pena leer la 
+#  documentación de gettext, especialmente las secciones dedicadas a este
+#  formato, por ejemplo ejecutando:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+# - El proyecto de traducción de Debian al español
+#   http://www.debian.org/intl/spanish/
+#   especialmente las notas y normas de traducción en
+#   http://www.debian.org/intl/spanish/notas
+#
+# - La guía de traducción de po's de debconf:
+#   /usr/share/doc/po-debconf/README-trans
+#   o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+# Si tiene dudas o consultas sobre esta traducción consulte con el último
+# traductor (campo Last-Translator) y ponga en copia a la lista de
+# traducción de Debian al español (<debian-l10n-spanish@lists.debian.org>)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert 1.0.13\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2012-06-11 18:37+0200\n"
+"Last-Translator: Javier Fernández-Sanguino <jfs@debian.org>\n"
+"Language-Team: Debian Spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-POFile-SpellExtra: organisationalUnitName email organisationName\n"
+"X-POFile-SpellExtra: commonName stateOrProvinceName countryName SSL\n"
+"X-POFile-SpellExtra: localityName Edimburgo\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Nombre del equipo:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Introduzca el nombre del sistema para el certificado SSL."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr "Se utilizará en el campo «commonName» del certificado SSL generado."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Nombre/s alternativo/s:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "Introduzca cualquier nombre adicional que deba utilizarse en el certificado SSL."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr "Se utilizará en el campo «subjectAltName» del certificado SSL generado."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For "
+"a web server with multiple DNS names this could look like:"
+msgstr "Debe separar con comas, no con espacios, los distintos nombres alternativos. Para un servidor web con múltiples nombres DNS ésto podría hacerse, por ejemplo, como:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.ejemplo.com,DNS:imagenes.ejemplo.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and "
+"an IPv4 address:"
+msgstr "A continuación se muestra un ejemplo más complejo que incluye un nombre de equipo, un WebID, una dirección de correo y una dirección IPv4:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr "DNS:ejemplo.com,URI:http://ejemplo.com/jose#yo,email:yo@ejemplo.com,IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Configure un certificado SSL."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "Deben reemplazarse los certificados SSL locales"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be "
+"done automatically."
+msgstr ""
+"Debe reemplazarse un certificado de seguridad que se creó automáticamente "
+"para su sistema local debido a que hay un fallo que lo hace inseguro. Esto "
+"se realizará automáticamente."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"If you don't know anything about this, you can safely ignore this message."
+msgstr "Puede ignorar con tranquilidad este mensaje si no sabe nada de esto."
+
+#~ msgid "GB"
+#~ msgstr "ES"
+
+#~ msgid "Country code:"
+#~ msgstr "Código del país"
+
+#~ msgid ""
+#~ "Please enter the two-letter ISO-3166 code to use in the SSL certificate."
+#~ msgstr ""
+#~ "Introduce el código ISO-3166 de dos letras a utilizar en el certificado "
+#~ "SSL."
+
+#~ msgid ""
+#~ "It will become the 'countryName' field of the generated SSL certificate."
+#~ msgstr ""
+#~ "Se utilizará en el campo «countryName» del certificado SSL generado."
+
+#~ msgid "Scotland"
+#~ msgstr "Escocia"
+
+#~ msgid "State or province name:"
+#~ msgstr "Nombre del estado o de la provincia:"
+
+#~ msgid ""
+#~ "Please enter the name of the administrative subdivision to use in the SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Introduce la subdivisión administrativa a utilizar en el certificado SSL."
+
+#~ msgid ""
+#~ "It will become the 'stateOrProvinceName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Se utilizaré en el campo «stateOrProvinceName» del certificado SSL "
+#~ "generado."
+
+#~ msgid "Edinburgh"
+#~ msgstr "Edimburgo"
+
+#~ msgid "Locality name:"
+#~ msgstr "Nombre de la localidad:"
+
+#~ msgid ""
+#~ "Please enter the name of the city or town to use in the SSL certificate."
+#~ msgstr ""
+#~ "Por favor, indique el nombre de la ciudad o pueblo a utilizar en el "
+#~ "certificado SSL."
+
+#~ msgid "Example Inc."
+#~ msgstr "Ejemplo S.A."
+
+#~ msgid "Organization name:"
+#~ msgstr "Nombre de la organización:"
+
+#~ msgid ""
+#~ "Please enter the name of the company or organization to use in the SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Introduzca el nombre de su empresa o de la organización que se utilizará "
+#~ "en el certificado."
+
+#~ msgid ""
+#~ "It will become the 'organisationName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Se utilizará en el campo «organisationName» del certificado SSL generado."
+
+#~ msgid "Dept. of Examplification"
+#~ msgstr "Departamento de Ejemplo"
+
+#~ msgid "Organizational unit name:"
+#~ msgstr "Nombre de la unidad organizativa:"
+
+#~ msgid ""
+#~ "Please enter the name of the division or section of the organization to "
+#~ "use in the SSL certificate."
+#~ msgstr ""
+#~ "Introduce el nombre de la división o sección de la organización a "
+#~ "utilizar en el certificado SSL."
+
+#~ msgid ""
+#~ "It will become the 'organisationalUnitName' field of the generated SSL "
+#~ "certificate."
+#~ msgstr ""
+#~ "Se utilizará en el campo «organisationalUnitName» del certificado SSL "
+#~ "generado."
+
+#~ msgid "This value is mandatory."
+#~ msgstr "Este valor es obligatorio."
+
+#~ msgid "Email address:"
+#~ msgstr "Dirección de correo electrónico:"
+
+#~ msgid "Please enter the email address to use in the SSL certificate."
+#~ msgstr ""
+#~ "Introduzca la dirección de correo electrónico a utilizar en el "
+#~ "certificado."
+
+#~ msgid "It will become the 'email' field of the generated SSL certificate."
+#~ msgstr "Se utilizará en el campo «email» del certificado SSL generado."
+
+#~ msgid "The two letter code for your Country. (e.g. GB) (countryName)"
+#~ msgstr "El código de dos letras para su país (p.ej. ES) («countryName»)"
+
+#~ msgid "Some-State"
+#~ msgstr "Algún estado"
+
+#~ msgid "Your state, county or province. (stateOrProvinceName)"
+#~ msgstr "Su estado, condado o provincia («stateOrProvinceName»)."
+
+#~ msgid "Some-Locality"
+#~ msgstr "Alguna localidad"
+
+#~ msgid "One Organization"
+#~ msgstr "Una organización"
+
+#~ msgid "One Organization Unit"
+#~ msgstr "Una unidad organizativa"
+
+#~ msgid ""
+#~ "The Division or section of the organisation the certificate is for. "
+#~ "(organisationalUnitName)"
+#~ msgstr ""
+#~ "La división, grupo o sección de la organización que va a utilizar el "
+#~ "certificado («organisationalUnitName»)."
+
+#~ msgid ""
+#~ "The host name of the server the certificate is for. This must be filled "
+#~ "in. (commonName)"
+#~ msgstr ""
+#~ "El nombre de equipo del servidor para el que es el certificado. Es "
+#~ "obligatorio rellenarlo («commonName»)."

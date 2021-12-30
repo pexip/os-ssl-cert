@@ -1,0 +1,46 @@
+# These templates have been reviewed by the debian-l10n-english
+# team
+#
+# If modifications/additions/rewording are needed, please ask
+# debian-l10n-english@lists.debian.org for advice.
+#
+# Even minor modifications require translation updates and such
+# changes should be coordinated with translators and reviewers.
+
+Template: make-ssl-cert/hostname
+Type: string
+Default: localhost
+_Description: Host name:
+ Please enter the host name to use in the SSL certificate.
+ .
+ It will become the 'commonName' field of the generated SSL certificate.
+
+Template: make-ssl-cert/altname
+Type: string
+_Description: Alternative name(s):
+ Please enter any additional names to use in the SSL certificate.
+ .
+ It will become the 'subjectAltName' field of the generated SSL certificate.
+ .
+ Multiple alternative names should be delimited with comma and no spaces.
+ For a web server with multiple DNS names this could look like:
+ .
+ DNS:www.example.com,DNS:images.example.com
+ .
+ A more complex example including a hostname, a WebID, an email address, and
+ an IPv4 address:
+ .
+ DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,IP:192.168.7.3
+
+Template: make-ssl-cert/title
+Type: title
+_Description: Configure an SSL Certificate.
+
+Template: make-ssl-cert/vulnerable_prng 
+Type: note
+_Description: Local SSL certificates must be replaced
+ A security certificate which was automatically created for your
+ local system needs to be replaced due to a flaw which renders it
+ insecure. This will be done automatically.
+ .
+ If you don't know anything about this, you can safely ignore this message.

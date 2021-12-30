@@ -1,0 +1,11 @@
+Tests: basic
+Depends: ssl-cert
+Restrictions: needs-root
+
+Tests: overwrite
+Depends: ssl-cert
+Restrictions: needs-root, breaks-testbed, allow-stderr
+
+Tests: server
+Depends: ssl-cert, curl
+Restrictions: needs-root, isolation-container
