@@ -1,3 +1,9 @@
+ssl-cert (1.1.2+pexip24u4) pexip-bookworm; urgency=medium
+
+  * New versioning scheme
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 01 Feb 2024 16:36:36 +0000
+
 ssl-cert (1.1.2pexip3) pexip-bookworm; urgency=medium
 
   * Bookworm build for product distribution
