@@ -1,3 +1,9 @@
+ssl-cert (1.1.2+pexip24u5) pexip; urgency=medium
+
+  * Don't use bash array for long opts parsing
+
+ -- Huw Jones <huw@pexip.com>  Fri, 17 May 2024 14:17:56 +0100
+
 ssl-cert (1.1.2+pexip24u4) pexip-bookworm; urgency=medium
 
   * New versioning scheme

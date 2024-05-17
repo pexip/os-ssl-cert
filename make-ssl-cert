@@ -125,27 +125,26 @@ opt_no_overwrite="false"
 opt_expiration_days="3650"
 
 # Transform long options to short ones
-newargs=()
+newargs=""
 for arg in "${@}"; do
     case "${arg}" in
-	--help)            newargs+=(-h)     ;;
+	--help)            newargs="${newargs} -h";;
 	--force-overwrite)
 	    # Move to front so that we accept --force-overwrite at the end, for
 	    # compatibility with 1.0.x.
-	    newargs=("-f" "${newargs[@]}")   ;;
-	--no-overwrite)    newargs+=(-n)     ;;
-	--expiration-days) newargs+=(-x)     ;;
+	    newargs="-f${newargs}" ;;
+	--no-overwrite)    newargs="${newargs} -n";;
+	--expiration-days) newargs="${newargs} -x";;
 	--*)
 	    printf "Unrecognized option %s\n\n" "${arg}"
 	    usage 1
 	    ;;
-	*)                 newargs+=("$arg") ;;
+	*)                 newargs="${newargs} ${arg}" ;;
     esac
 done
-set -- "${newargs[@]}"
 
 # Parse short options
-while getopts "hfnx:" opt "${@}"; do
+while getopts "hfnx:" opt ${newargs}; do
     case "${opt}" in
 	h) usage 0                                ;;
 	f) opt_force_overwrite="true"             ;;
