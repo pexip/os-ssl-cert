@@ -1,0 +1,131 @@
+# Mesajele în limba română pentru pachetul ssl-cert.
+# Romanian translation of ssl-cert.
+# Copyright © 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ssl-cert package.
+#
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2023.
+#
+# Cronologia traducerii fișierului „ssl-cert”:
+# Traducerea inițială, făcută de R-GC, pentru versiunea ssl-cert 1.1.2(2012-06-09).
+# Actualizare a traducerii pentru versiunea Y, făcută de X, Y(anul).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ssl-cert 1.1.2\n"
+"Report-Msgid-Bugs-To: ssl-cert@packages.debian.org\n"
+"POT-Creation-Date: 2012-06-09 20:06+0200\n"
+"PO-Revision-Date: 2023-03-26 13:32+0200\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && "
+"n%100<=19) ? 1 : 2);\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Host name:"
+msgstr "Numele gazdei:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter the host name to use in the SSL certificate."
+msgstr "Introduceți numele gazdei de utilizat în certificatul SSL."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "It will become the 'commonName' field of the generated SSL certificate."
+msgstr "Acesta va deveni câmpul „commonName” al certificatului SSL generat."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Alternative name(s):"
+msgstr "Nume alternativ(e):"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "Please enter any additional names to use in the SSL certificate."
+msgstr "Introduceți orice nume suplimentare de utilizat în certificatul SSL."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"It will become the 'subjectAltName' field of the generated SSL certificate."
+msgstr "Acesta va deveni câmpul „subjectAltName” al certificatului SSL generat."
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"Multiple alternative names should be delimited with comma and no spaces. For a "
+"web server with multiple DNS names this could look like:"
+msgstr ""
+"Numele alternative multiple ar trebui delimitate cu virgule și fără spații. "
+"Pentru un server web cu mai multe nume DNS, acesta ar putea arăta astfel:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid "DNS:www.example.com,DNS:images.example.com"
+msgstr "DNS:www.exemplu.com,DNS:images.exemplu.com"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"A more complex example including a hostname, a WebID, an email address, and an "
+"IPv4 address:"
+msgstr ""
+"Un exemplu mai complex care include un nume de gazdă, un WebID, o adresă de e-"
+"mail și o adresă IPv4:"
+
+#. Type: string
+#. Description
+#: ../templates:3001
+msgid ""
+"DNS:example.com,URI:http://example.com/joe#me,email:me@example.com,"
+"IP:192.168.7.3"
+msgstr ""
+"DNS:exemplu.com,URI:http://exemplu.com/andrei#eu,email:eu_andrei@exemplu.com,"
+"IP:192.168.7.3"
+
+#. Type: title
+#. Description
+#: ../templates:4001
+msgid "Configure an SSL Certificate."
+msgstr "Configurați un certificat SSL."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "Local SSL certificates must be replaced"
+msgstr "Certificatele SSL locale trebuie înlocuite"
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid ""
+"A security certificate which was automatically created for your local system "
+"needs to be replaced due to a flaw which renders it insecure. This will be done "
+"automatically."
+msgstr ""
+"Un certificat de securitate care a fost creat automat pentru sistemul dvs. "
+"local trebuie înlocuit din cauza unui defect care îl face nesigur. Acest lucru "
+"se va face automat."
+
+#. Type: note
+#. Description
+#: ../templates:5001
+msgid "If you don't know anything about this, you can safely ignore this message."
+msgstr ""
+"Dacă nu știți nimic despre acest lucru, puteți ignora acest mesaj în siguranță."

@@ -149,7 +149,7 @@ while getopts "hfnx:" opt ${newargs}; do
 	h) usage 0                                ;;
 	f) opt_force_overwrite="true"             ;;
 	n) opt_no_overwrite="true"                ;;
-	x) opt_expiration_days="${OPTIND}"        ;;
+	x) opt_expiration_days="${OPTARG}"        ;;
 	*)
 	    printf "Unrecognized option %s\n\n" "-${opt}"
 	    usage 1
